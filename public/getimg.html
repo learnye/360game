@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function show(){
+            var $pid=pid.value;
+            console.log($pid);
+            var xhr=new XMLHttpRequest();
+            xhr.onreadystatechange=function(){
+                if(xhr.readyState==4 && xhr.status==200){
+                var r=JSON.parse(xhr.responseText);
+                d1.innerHTML=`<img src="${r[0].avatar}">`;
+                // console.log(r);
+                }
+            }
+            xhr.open('get',`/pro/requireimg/${$pid}`,true);
+            xhr.send();
+            
+        }
+    </script>
+</head>
+<body>
+    <input type="text" name="" id="pid"><br>
+    <button onclick="show()">提交</button>
+    <div id="d1">
+    </div>
+</body>
+</html>

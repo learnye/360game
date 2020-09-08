@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>360个人中心,我创造你快乐</title>
+        <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="./css/myself.css">
+    </head>
+<body>
+    <!-- 头部，导航栏HTML -->
+    <div class="top">
+        <div class="wrap">
+            <div class="top-tool">
+                <a href="#">保存桌面</a>
+                <em style="margin: 0;">|</em>
+                <a href="#">设为主页</a>
+                <em style="margin: 0">|</em>
+                <a href="#">360游戏大厅，土豪都在用!</a>
+            </div>
+            <span class="span-active">
+                <a href="user.html">登录</a>
+                <em>|</em>
+                <a href="user.html">注册</a>
+            </span>
+            <span>
+                欢迎你，
+                <a href="#"></a>
+                !
+                <a href="javascript:;">[退出]</a>
+            </span>
+        </div>
+    </div>
+    <div class="nav">
+        <div class="nav_1">
+            <a href="#" class="nav_logo" id="nav_logo"></a>
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li class="active"><a href="myself.html">个人中心</a></li>
+                <li><a href="#">全部游戏</a></li>
+                <li><a href="#" class="red">手机页游</a></li>
+                <li><a href="#">充值</a></li>
+                <li>
+                    <i class="icon_fanli"></i>
+                    <a href="#" class="red">大玩家</a>
+                </li>
+                <li><a href="#">积分商城</a></li>
+                <li><a href="#">客服</a></li>
+            </ul>
+
+            <div class="nav_search">
+                <span>
+                    <input type="text" name="" placeholder="魔域觉醒">
+                </span>
+                <a href="#" class="nav_s1"></a>
+                <ul></ul>
+            </div>
+
+        </div>
+    </div>
+    <!-- 节点HTML -->
+    <section>
+        <div class="user-title">
+            <div class="user-title-c">
+                <div class="avatar">
+                    <img src="./images/myself/user.jpg" alt="">
+                </div>
+                <div class="user-info">
+                    <p>
+                        <span class="name"></span>
+                        <i class="icon icon-vip"></i>
+                    </p>
+                    <div class="level">
+                        <span>V1</span>
+                        <p class="progress-bar">
+                            <span style="width: 0%;"></span>
+                        </p>
+                        <span>V2</span>
+                        <a href="#">提升等级</a>
+                    </div>
+                    <p class="cent">
+                        <i class="icon icon-gold"></i>
+                        <span>2</span>
+                        |
+                        <a href="#">赚取积分</a>
+                    </p>
+                </div>
+                <div class="info-set">
+                    <div class="mail">
+                        <a href="#">
+                            <i class="icon icon-mail"></i>
+                            <span>绑定邮箱</span>
+                        </a>
+                    </div>
+                    <div class="phone">
+                        <a href="#">
+                            <i class="icon icon-phone"></i>
+                            <span>绑定手机</span>
+                        </a>
+                    </div>
+                    <div class="indulge">
+                        <a href="#">
+                            <i class="icon icon-indulge"></i>
+                            <span>设置防沉迷</span>
+                        </a>
+                    </div>
+                    <p>
+                        <a href="#">
+                            <i class="icon icon-password"></i>
+                            <span>修改密码</span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="user-title-c notitle" style="display: none;">
+                <div class="avatar">
+                    <a href="user.html" class="wan-login-btn">登录</a>
+                </div>
+            </div>
+        </div>
+        <!-- 信息列表 -->
+        <div class="wapper">
+            <div class="content">
+                <ul class="user-nav">
+                    <li class="active">
+                        <i class="icon icon-game"></i>
+                        <span>我的游戏</span>
+                    </li>
+                    <li>
+                        <i class="icon icon-gift"></i>
+                        <span>我的礼包</span>
+                    </li>
+                    <li>
+                        <i class="icon icon-msg"></i>
+                        <span>我的消息</span>
+                    </li>
+                    <li>
+                        <i class="icon icon-safe"></i>
+                        <span>账号安全</span>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon icon-info"></i>
+                            <span>个人信息</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="details">
+                    <div class="title">我的游戏</div>
+                    <div class="details-content">
+                        <div class="content-game">
+                            <ul>
+                                <p class="loading" >没有游戏数据...</p>
+                                <!-- <li>
+                                    <a href="shenzuo.html" class="game-image"></a>
+                                    <div class="game-list">
+                                        <p>游戏名称：<span>神座</span></p>
+                                        <div class="list">
+                                            <div class="turn left"></div>
+                                            <div class="server-warp">
+                                                <ul class="server-list">
+                                                    <li>
+                                                        <a href="#">正式1134服</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="turn right"></div>
+                                        </div>
+                                    </div>
+                                </li> -->
+                            </ul>
+                            <div id="pagGames" class="pagings">
+                                <div class="dividepage">
+                                    <div class="page_border page_padding page_bgc page_hoverDisable">上一页</div>
+                                    <div class="page_border page_padding page_bgc page_checked">1</div>
+                                    <div class="page_border page_padding page_bgc page_hover">2</div>
+                                    <div class="page_border page_padding page_bgc page_hover">下一页</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-gift" style="display: none;">
+                            <ul><p class="loading">还未领取过礼包！</p></ul>
+                            <div></div>
+                        </div>
+                        <div class="content-msg" style="display: none;">
+                            <ul><p class="loading">还未接收到消息！</p></ul>
+                            <div></div>
+                        </div>
+                        <ul class="content-safe" style="display: none;">
+                            <li class="mails">
+                                <span style="float: left;">
+                                    <i class="icon icon-mails"></i>
+                                    密保邮箱
+                                </span>
+                                <span class="nbing">未绑定</span>
+                                <a href="#">绑定邮箱</a>
+                            </li>
+                            <li class="phones">
+                                <span style="float: left;">
+                                    <i class="icon icon-phones"></i>
+                                    密保手机
+                                </span>
+                                <span class="nbing">未绑定</span>
+                                <a href="#">绑定手机</a>
+                            </li>
+                            <li class="indulges">
+                                <span style="float: left;">
+                                    <i class="icon icon-indulges"></i>
+                                    防沉迷
+                                </span>
+                                <a href="#">设置防沉迷</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="details nouser" style="display: none;">
+                    <p>登陆后即可查看我的游戏</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 页面底部 -->
+    <footer class="foot">
+        <div class="wrap_foot">
+            <a href="#" class="foot_logo1" id="logo1"></a>
+            <a href="#" class="foot_logo2"></a>
+            <div class="foot_text">
+                <p>
+                    <a href="#">360游戏服务及许可协议</a>
+                    <a href="#">游戏商务合作</a>
+                    <a href="#">游戏组件未成年人家长监护工程</a>
+                    <a href="#">北京世界星辉科技有限责任公司</a>
+                </p>
+                <p>
+                    <a href="#">京ICP证 140711号</a>
+                    <a href="#">京ICP备11014623号-1</a>
+                    <a href="#">京网文[2018]9597-828号</a>
+                    <a href="#">京公网安备 11000002000006号</a>
+                </p>
+                <p>Copyright©2005-2020 360.CN All Rights Reserved 360网页游戏中心</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/myself.js"></script>
+</body>
+</html>

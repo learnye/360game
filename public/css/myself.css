@@ -1,0 +1,699 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* ------------------头部样式------------------------· */
+a {
+    text-decoration: none;
+    color: #333;
+    outline: 0;
+    cursor: pointer;
+}
+img {
+    cursor: pointer;
+    vertical-align: middle;
+}
+/* a:hover{
+    text-decoration: underline;
+} */
+ul {
+    list-style: none;
+    vertical-align: top;
+}
+/* ---------------- 登录导航栏----------------------- */
+.top {
+    width: 100%;
+    height: 30px;
+    background-color: #292929;
+}
+.top .wrap {
+    height: 30px;
+    margin: 0 auto;
+    width: 1368px;
+}
+.top .wrap .top-tool {
+    height: 30px;
+    text-align: right;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+.top .wrap>span {
+    height: 30px;
+    display: none;
+    float: right;
+    color: #C7C7C7;
+    font: 12px 'Microsoft YaHei';
+}
+.top>.wrap>.span-active{
+    display: block;
+}
+
+.top em {
+    font-style: normal;
+    color: #5e5e5e;
+    margin: 0 5px;
+    width: 3.23px;
+    height: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    padding: 0;
+    font-size: 12px;
+}
+.top a {
+    color: #C7C7C7;
+    
+    font: 12px 'Microsoft YaHei';
+    line-height: 30px;
+    margin: 0;
+    width: 100%;
+}
+.top a:hover {
+    text-decoration: underline;
+}
+.top .wrap>span a:hover {
+    color: #FF6310;;
+}
+/* ---------------游戏导航栏------------------------ */
+.nav {
+    position: relative;
+    height: 80px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+    z-index: 9999;
+}
+.nav_1 {
+    position: relative;
+    height: 80px;
+    width: 1366px;
+    margin: 0 auto;
+}
+.nav .nav_logo {
+    width: 180px;
+    height: 52px;
+    line-height: 80px;
+    margin: 17px 40px 0 0;
+    background-color: aqua;
+    float: left;
+    background: url('../images/48.png') no-repeat;
+    
+}
+/* --------------------nav图片列表样式---------------- */
+.nav>.nav_1>ul {
+    float: left;
+    list-style: none;
+    height: 50px;
+
+}
+.nav ul>li {
+    float: left;
+    font:16px 'Microsoft YaHei';
+    height: 20px;
+    margin: 0 25px 0 0;
+    padding-top: 30px;
+    /* line-height: 50px; */
+    vertical-align: top;
+}
+.nav ul .active a{
+    color: #FF6310;
+    border-top: 6px solid #FF6310;
+    padding-top: 24px;
+}
+.nav ul>li a:hover {
+    color: #FF6310;
+    border-top: 5px solid #FE8800;
+    padding-top: 25px;
+}
+.nav ul li .red {
+    color: #FF0000;
+    font-weight: 700;
+}
+.nav ul>li:nth-child(6){
+    position: relative;
+}
+.nav_1 .icon_fanli {
+    display: block;
+    position: absolute;
+    width: 37px;height: 20px;
+    background: url('../gif/7.gif') no-repeat;
+    right: -15px;
+    top: 12px;
+}
+/* --------------------------搜索框样式----------------------------------  */
+.nav .nav_search {
+    float: right;
+    height: 38px;
+    width: 161px;
+    margin: 21px 17px 0 0;
+    line-height: 38px;
+    /* border: 1px solid #FEA030; */
+    position: relative;
+    
+}
+.nav .nav_search span {
+    display: inline-block;
+    border: 0;
+    /* width: 105px;
+    height: 37px; */
+    
+}
+.nav .nav_search span input {
+    border: 0;
+    width: 161px;
+    height: 38px;
+    box-sizing: border-box;
+    /* margin-left: 15px; */
+    padding-left: 15px;
+    font-size: 14px;
+    border: 1px solid #FEA030;
+    border-radius: 20px;
+    outline: 0;
+    
+    
+}
+.nav_s1 {
+    display: block;
+    /* background-color: red; */
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top:9px ;
+    right: 15px;
+    background-image: url(../images/62.png);
+    background-repeat: no-repeat;
+}
+a.nav_s1:hover{
+    background-position: -30px 0;
+}
+/* -------------------节点样式-------------------------- */
+/* 用户头像信息等样式 */
+.user-title {
+    width: 100%;
+    min-width: 1200px;
+    height: 282px;
+    background: url(../images/myself/title-bj.png) center center no-repeat;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+}
+.user-title-c {
+    width: 1200px;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+/* 头像样式 */
+.avatar {
+    position: absolute;
+    left: 16px;
+    top: 44px;
+    width: 194px;
+    height: 194px;
+    line-height: 194px;
+    text-align: center;
+    background: url(../images/myself/default-avatar.png) center center no-repeat;
+}
+.avatar img {
+    width: 124px;
+    height: 124px;
+    border-radius: 50%;
+}
+.notitle .avatar {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.notitle .avatar .wan-login-btn {
+    width: 144px;
+    height: 40px;
+    background: url(../images/myself/button.png) no-repeat;
+    line-height: 40px;
+    font-size: 20px;
+    color: #683400;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+/* 用户信息样式 */
+.user-info {
+    position: absolute;
+    left: 250px;
+    top: 90px;
+    height: 130px;
+}
+.user-info .name {
+    font-size: 20px;
+    margin-right: 10px;
+}
+.user-info .level, .user-info>p {
+    margin: 10px 0;
+    text-align: left;
+    line-height: 30px;
+    float: left;
+}
+.icon.icon-vip {
+    width: 40px;
+    background-image: url(../images/myself/vipss.png);
+}
+.icon.icon-gold, .icon.icon-vip {
+    height: 17px;
+    background-position: 0 0;
+}
+.icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/myself/icons.png);
+    background-repeat: no-repeat;
+    background-position: 20px 30px;
+    vertical-align: text-top;
+}
+.user-info .level {
+    color: #000;
+    margin: 12px 32px;
+    width: 296px;
+}
+.user-info .level a {
+    font-size: 12px;
+    color: #e92222;
+    text-decoration: underline;
+    margin-left: 10px;
+}
+.user-info .level .progress-bar {
+    display: inline-block;
+    position: relative;
+    margin: 10px 5px;
+    width: 180px;
+    height: 8px;
+    background: #FFF;
+    vertical-align: top;
+    border-radius: 4px;
+}
+.user-info .level .progress-bar span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 8px;
+    background: #e92222;
+    border-radius: 4px;
+}
+.icon.icon-gold {
+    width: 16px;
+    background-image: url(../images/myself/cent.png);
+}
+.user-info .cent .icon {
+    position: absolute;
+    top: 7px;
+    vertical-align: middle;
+}
+.user-info .cent {
+    position: relative;
+    clear: both;
+    color: #000;
+}
+.user-info .cent span {
+    margin-right: 10px;
+    margin-left: 20px;
+}
+.user-info .cent a {
+    color: #000;
+    text-decoration: underline;
+    margin-left: 10px;
+}
+/* 用户信息设置 */
+.info-set {
+    position: absolute;
+    width: 170px;
+    top: 52px;
+    right: 16px;
+    text-align: left;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.info-set a {
+    color: #FFF;
+    display: block;
+    margin: 10px 0;
+}
+.info-set .icon {
+    margin-right: 18px;
+}
+/* 每个不同样式的图片 */
+.icon.icon-mail {
+    background-position: -32px 0;
+}
+.icon.icon-phone {
+    background-position: -32px -42px;
+}
+.icon.icon-indulge {
+    background-position: -32px -88px;
+}
+.icon.icon-password {
+    background-position: -32px -132px;
+}
+/* 信息列表样式 */
+.content-safe a, .info-set p, .user-nav li {
+    cursor: pointer;
+}
+.wapper {
+    width: 100%;
+    background: #eee;
+    font-size: 14px;
+    color: #000;
+    padding-top: 15px;
+}
+.wapper .content {
+    margin: 0 auto;
+    width: 1200px;
+    overflow: hidden;
+    background: #FFF;
+}
+.user-nav {
+    float: left;
+    text-align: center;
+    height: 100%;
+    font-size: 16px;
+    color: #333;
+}
+.user-nav, .user-nav li {
+    width: 230px;
+    box-sizing: border-box;
+}
+.user-nav li.active {
+    border: 0;
+    color: #ff6012;
+    background: #ffede6;
+}
+.user-nav li {
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #e6e6e6;
+}
+/* 各种列表图标位置 */
+.icon.icon-game {
+    background-position: 0 0;
+}
+.icon.icon-gift {
+    background-position: 0 -44px;
+}
+.icon.icon-msg {
+    background-position: 0 -90px;
+}
+.icon.icon-safe {
+    background-position: 0 -132px;
+}
+.icon.icon-info {
+    background-position: 0 -176px;
+}
+.user-nav li span {
+    margin-left: 12px;
+}
+.details {
+    float: right;
+    width: 920px;
+    margin-left: -1px;
+    padding: 25px;
+    border-left: 1px solid #e6e6e6;
+}
+.nouser {
+    min-height: 700px;
+    background: url(../images/myself/details-bj.png) center 100px no-repeat;
+}
+.nouser p {
+    margin-top: 410px;
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+}
+/* 我的游戏样式 */ 
+.details .title {
+    height: 40px;
+    font-size: 20px;
+    color: #333;
+    font-weight: 700;
+    background: url(../images/myself/border-image.png) left bottom no-repeat;
+}
+.details .details-content {
+    position: relative;
+    text-align: left;
+}
+.content-game {
+    overflow: hidden;
+    min-height: 680px;
+}
+.content-game ul li {
+    padding: 20px 0;
+    height: 120px;
+    position: relative;
+    border-top: 1px dashed #eee;
+    margin-top: -1px;
+}
+.content-game .game-image {
+    position: absolute;
+    left: 0;
+    top: 20px;
+    width: 200px;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../images/mygame/sz.jpg);
+}
+.content-game .game-list {
+    position: relative;
+    width: 695px;
+    height: 100%;
+    margin-left: 225px;
+}
+.content-game .game-list p {
+    font-size: 14px;
+    color: #111;
+    margin-bottom: 19px;
+    height: 20px;
+}
+.content-game .game-list p span {
+    font-size: 18px;
+    color: #333;
+    font-weight: 700;
+}
+.content-game .game-list .list {
+    position: relative;
+    height: 81px;
+}
+.content-game .turn.left {
+    background-position: 0 0;
+    left: 0;
+}
+.content-game .turn {
+    position: absolute;
+    top: 0;
+    background: url(../images/myself/rf-3.png) no-repeat;
+    width: 22px;
+    height: 81px;
+    z-index: 1;
+}
+.content-game .game-list .server-warp {
+    position: absolute;
+    top: 0;
+    left: 22px;
+    width: 650px;
+    height: 81px;
+    overflow: hidden;
+    text-align: center;
+}
+.content-game .game-list .server-list {
+    width: 158px;
+    position: absolute;
+    height: 37px;
+}
+.content-game .game-list .server-list li {
+    float: left;
+    margin: 0 0 0 18px;
+    padding: 0;
+    border: 0;
+    width: 140px;
+    height: 37px;
+    line-height: 40px;
+    background: #ff9419;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.content-game .game-list .server-list li:hover{
+    background-color: #FF5715;
+}
+.content-game .game-list .list a {
+    color: #fff;
+    text-decoration: none;
+}
+.content-game .turn.right {
+    background-position: -22px 0;
+    right: 0;
+}
+.content-game .game-image p {
+    display: none;
+    opacity: 1;
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 25px;
+    line-height: 25px;
+    background-color: #f80;
+    font-size: 14px;
+    color: rgba(255,255,255,.902);
+    text-align: center;
+    transition: all 0.2s;
+}
+.content-game .game-image:hover p{
+    display: block;
+    opacity: 1;
+}
+/* 分页样式 */
+.details .pagings {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.dividepage{
+    display: inline-block;
+    padding: 5px;
+    user-select: none;
+}
+.dividepage div {
+    display: inline-block;
+    vertical-align: bottom;
+    height: 24px;
+    line-height: 24px;
+    /* margin: 2px; */
+}
+.dividepage .page_padding {
+    padding: 1px 9px;
+}
+.dividepage .page_bgc {
+    background-color: #fff;
+    color: #698ca9;
+}
+.dividepage .page_hoverDisable {
+    opacity: .5;
+}
+.details .pagings .dividepage .page_border {
+    border: 0;
+    background-color: #f6f6f6;
+    color: #666;
+}
+.details .pagings .dividepage .page_checked {
+    background-color: #ff6012;
+    color: #fff;
+}
+/* 我的礼包样式 */
+.content-gift {
+    padding: 30px 0;
+    min-height: 570px;
+}
+.content-msg {
+    padding: 30px 0;
+    min-height: 640px;
+}
+.content-safe {
+    font-size: 18px;
+    min-height: 700px;
+    color: #333;
+}
+.content-game .loading {
+    padding-top: 30px;
+}
+.details .loading {
+    margin: 24px 0;
+    width: 100%;
+    font-size: 20px;
+    color: #999;
+    text-align: center;
+}
+/* 账号安全样式 */
+.content-safe li {
+    height: 100px;
+    line-height: 100px;
+    border-bottom: 1px dashed #c5c5c5;
+    text-align: center;
+}
+.icon.icon-mails {
+    background-position: -30px -173px;
+}
+.icon.icon-indulges, .icon.icon-mails, .icon.icon-phones {
+    width: 28px;
+    margin: 0 20px 0 10px;
+}
+.content-safe li .nbing {
+    font-size: 14px;
+    color: #f80;
+}
+.content-safe li a {
+    float: right;
+    margin-right: 25px;
+    margin-top: 33px;
+    width: 110px;
+    height: 35px;
+    background: #ff7e00;
+    border-radius: 3px;
+    line-height: 35px;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+}
+.icon.icon-phones {
+    background-position: -30px -220px;
+}
+.icon.icon-indulges {
+    background-position: -32px -266px;
+}
+/* ----------------------------底部样式------------------- */
+.foot {
+    clear: both;
+    width: 100%;
+    height: 125px;
+    background-color: #F2F2F2;
+}
+.foot .wrap_foot {
+    width: 1366px;
+    height: 101px;
+    margin: 0 auto;
+}
+.foot .wrap_foot .foot_logo1 {
+    float: left;
+    width: 194px;
+    height: 52px;
+    margin-top: 33px;
+    background: url('../images/48.png') no-repeat;
+
+}
+.foot .wrap_foot .foot_logo2 {
+    float: left;
+    width: 36px;
+    height: 36px;
+    margin: 42px 0 0 26px;
+    background: url('../images/79.png') no-repeat;
+}
+.foot .wrap_foot .foot_text {
+    float: right;
+    height: 69px;
+    font-size: 12px;
+    text-align: right;
+    margin: 32px 0 0 ;
+}
+.foot .wrap_foot .foot_text a {
+    margin: 0 0 0 35px;
+}
+.foot .wrap_foot .foot_text a:hover {
+    text-decoration: underline;
+}
+.foot .wrap_foot .foot_text p {
+    margin: 0 0 10px;
+}

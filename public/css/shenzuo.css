@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: "Microsoft YaHei";
+    font-size: 12px;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.wrap{
+    position: relative;
+    width: 100%;
+}
+/* 背景样式 */
+.sz_bg {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 1920px;
+    margin-left: -960px;
+    z-index: 1;
+}
+.sz_bg div {
+    height: 1000px;
+}
+.sz_h1 {
+    background: url(../sz/bg1.jpg) no-repeat;
+}
+.bg_left {
+    left: 0;
+    z-index: 2;
+    width: 960px;
+    overflow: hidden;
+}
+.bg_left, .ym_bg_right, .yc {
+    position: absolute;
+    top: 0;
+    width: 1920px;
+}
+.bg_left {
+    left: 0;
+    z-index: 2;
+    width: 960px;
+    overflow: hidden;
+}
+.bg_right {
+    right: 0;
+    z-index: 1;
+}
+.ym_b1 {
+    background: url(../sz/bg2.jpg) no-repeat;
+}
+/* 按钮样式 */
+.neirong {
+    width: 1200px;
+    margin: 0px auto;
+    left: 50%;
+    margin-left: -600px;
+    position: absolute;
+    top: 0px;
+    z-index: 4;
+}
+.neirong a {
+    background: url(../sz/k.png);
+}
+.neirong .jrgw {
+    width: 215px;
+    height: 56px;
+    position: absolute;
+    top: 50px;
+    right: 109px;
+}
+
+.neirong .wdxz {
+    width: 260px;
+    height: 92px;
+    position: absolute;
+    top: 678px;
+    left: 220px;
+}
+
+.neirong .lqlb {
+    width: 260px;
+    height: 92px;
+    position: absolute;
+    top: 676px;
+    right: 230px;
+}
+
+.neirong .start {
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    top: 615px;
+    left: 520px;
+    overflow: hidden;
+}
+/* 底部css样式 */
+.foot {
+    background: #131313;
+    padding: 20px 0;
+    position: relative;
+    top: 1000px;
+}
+.new-foot-icon {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    height: 120px;
+    overflow: hidden;
+}
+.new-logo1, .new-logo2, .new-logo3{
+    display: block;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+.new-logo1 {
+    background: url(../sz/logo_b.png) no-repeat;
+    height: 66px;
+    top: 24px;
+    width: 250px;
+}
+.new-logo2 {
+    background: url(../sz/t0112f012d9c7dfbfb3.png) no-repeat;
+    height: 48px;
+    left: 270px;
+    top: 8px;
+    width: 41px;
+}
+.new-logo3 {
+    background: url(../sz/t01afe2f60da49b6963.png) no-repeat;
+    height: 47px;
+    left: 268px;
+    top: 66px;
+    width: 47px;
+}
+.footer-txt {
+    color: #747474;
+    line-height: 25px;
+    padding: 0 0 0 320px;
+}
+.footer-txt a, .footer-txt span {
+    color: #747474;
+    padding: 0 5px;
+}
+.footer-txt span:first-child{
+    padding: 0;
+}

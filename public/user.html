@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>360游戏中心,我创造你快乐 - 登录|注册-360网页游戏|webgame|网页游戏|免费游戏|游戏开服|游戏攻略|游戏大全</title>
+    <link rel="stylesheet" href="./css/user.css">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header class="nav">
+        <div class="wrap">
+            <a href="#" class="nav-logo c-texthide">360游戏中心</a>
+        </div>
+    </header>
+    <section class="sec">
+        <div class="wrap">
+            <div class="sign-box">
+                <div class="tab-title">
+                    <span class="cur">安全登录</span>
+                    <span>免费注册</span>
+                </div>
+                <div class="sign-wrap">
+                    <div class="login-wrap ">
+                        <div class="login-wrap-in">
+                            <div class="login-main">
+                                <div class="dg-zh">
+                                    <span class="user-logo"></span>
+                                    <input type="text" placeholder="手机号/用户名/邮箱" id="uname">
+                                </div>
+                                <div class="dg-pd">
+                                    <span class="user-logo"></span>
+                                    <input type="password" placeholder="请输入您的密码" id="upwd">
+                                </div>
+                                <div class="dg-checkbox">
+                                    <label for="l1"><input type="checkbox" checked="checked" id="l1">下次自动登录</label>
+                                    <a href="#">忘记密码?</a>
+                                </div>
+                                <div class="dg-btn">
+                                    <button class="login-btn" onclick="login()">登录</button>
+                                </div>
+                                <div class="other-zh">
+                                    <span>其他账号登录:</span>
+                                    <span class="zh-part">
+                                        <a class="common-icon icon-sina" href="#" title="新浪微博登录"></a>
+                                        <a class="common-icon icon-qq" href="#" title="QQ登录"></a>
+                                        <a class="common-icon icon-weixin" href="#" title="微信登录"></a>
+                                    </span>
+                                </div>
+                                <div class="login-text">
+                                    <label for="l2"><input type="checkbox" checked="checked" id="l2">同意并阅读<a
+                                            href="#">"360游戏服务及许可协议"</a>和<a href="#">"360游戏隐私政策"</a></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="register-wrap ">
+                        <div class="register-wrap-in">
+                            <div class="register-main">
+                                <div class="ze-zh">
+                                    <span class="user-logo"></span>
+                                    <input type="text" onblur="checkuname()" id="g_uname">
+                                    <span class="user-text t1">2-14个字符：英文、数字或中文</span>
+                                </div>
+                                <div class="ze-pd">
+                                    <span class="user-logo"></span>
+                                    <input type="password" id="g_upwd" onblur="checkupwd()">
+                                    <span class="user-text t2" >8-20个字符(区分大小写)</span>
+                                </div>
+                                <div class="ze-pd">
+                                    <span class="user-logo"></span>
+                                    <input type="password" id="gupwd" onblur="checkagain()">
+                                    <span class="user-text t3">请再次输入密码</span>
+                                </div>
+                                <div class="ze-ym">
+                                    <input type="text" class="inp1" id="numcode">
+                                    <a href="javascript:code();">
+                                        <span id="yzcode"></span>
+                                        <span>换一张</span>
+                                    </a>
+                                    <span class="user-text">请输入图中的字母或数字，不区分大小写</span>
+                                </div>
+                                <div class="ze-btn">
+                                    <button class="register-btn" onclick="register()">立即注册</button>
+                                </div>
+                                <div class="register-text">
+                                    <label for="l2"><input type="checkbox" checked="checked" id="l2">同意并阅读<a href="#">"360游戏服务及许可协议"</a>和<a href="#">"360游戏隐私政策"</a></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="foot">
+        <div class="wrap_foot">
+            <a href="#" class="foot_logo1" id="logo1"></a>
+            <a href="#" class="foot_logo2"></a>
+            <div class="foot_text">
+                <p>
+                    <a href="#">360游戏服务及许可协议</a>
+                    <a href="#">游戏商务合作</a>
+                    <a href="#">游戏组件未成年人家长监护工程</a>
+                    <a href="#">北京世界星辉科技有限责任公司</a>
+                </p>
+                <p>
+                    <a href="#">京ICP证 140711号</a>
+                    <a href="#">京ICP备11014623号-1</a>
+                    <a href="#">京网文[2018]9597-828号</a>
+                    <a href="#">京公网安备 11000002000006号</a>
+                </p>
+                <p>Copyright©2005-2020 360.CN All Rights Reserved 360网页游戏中心</p>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/user.js"></script>
+</body>
+
+</html>

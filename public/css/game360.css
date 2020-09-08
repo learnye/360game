@@ -1,0 +1,1820 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* ------------------头部样式------------------------· */
+a {
+    text-decoration: none;
+    color: #333;
+    outline: 0;
+    cursor: pointer;
+}
+img {
+    cursor: pointer;
+}
+ul {
+    list-style: none;
+}
+/* ---------------- 登录导航栏----------------------- */
+.top {
+    width: 100%;
+    height: 30px;
+    background-color: #292929;
+}
+.top .wrap {
+    height: 30px;
+    margin: 0 auto;
+    width: 1368px;
+}
+.top .wrap .top-tool {
+    height: 30px;
+    text-align: right;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+.top .wrap>span {
+    height: 30px;
+    display: none;
+    float: right;
+    color: #C7C7C7;
+    font: 12px 'Microsoft YaHei';
+}
+.top>.wrap>.span-active{
+    display: block;
+}
+
+.top em {
+    font-style: normal;
+    color: #5e5e5e;
+    margin: 0 5px;
+    width: 3.23px;
+    height: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    padding: 0;
+    font-size: 12px;
+}
+.top a {
+    color: #C7C7C7;
+    
+    font: 12px 'Microsoft YaHei';
+    line-height: 30px;
+    margin: 0;
+    width: 100%;
+}
+.top a:hover {
+    text-decoration: underline;
+}
+.top .wrap>span a:hover {
+    color: #FF6310;;
+}
+/* ---------------游戏导航栏------------------------ */
+.nav {
+    position: relative;
+    height: 80px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+    z-index: 9999;
+}
+.nav_1 {
+    position: relative;
+    height: 80px;
+    width: 1366px;
+    margin: 0 auto;
+}
+.nav .nav_logo {
+    width: 180px;
+    height: 52px;
+    line-height: 80px;
+    margin: 17px 40px 0 0;
+    background-color: aqua;
+    float: left;
+    background: url('../images/48.png') no-repeat;
+    
+}
+/* --------------------nav图片列表样式---------------- */
+.nav>.nav_1>ul {
+    float: left;
+    list-style: none;
+    height: 50px;
+
+}
+.nav>div>ul>li {
+    float: left;
+    font:16px 'Microsoft YaHei';
+    height: 20px;
+    margin: 0 25px 0 0;
+    padding-top: 30px;
+    /* line-height: 50px; */
+    vertical-align: top;
+}
+.nav ul .active a{
+    color: #FF6310;
+    border-top: 6px solid #FF6310;
+    padding-top: 24px;
+}
+.nav>div>ul>li a:hover {
+    color: #FF6310;
+    border-top: 5px solid #FE8800;
+    padding-top: 25px;
+}
+.nav ul li .red {
+    color: #FF0000;
+    font-weight: 700;
+}
+.nav ul>li:nth-child(6){
+    position: relative;
+}
+.nav_1 .icon_fanli {
+    display: block;
+    position: absolute;
+    width: 37px;height: 20px;
+    background: url('../gif/7.gif') no-repeat;
+    right: -15px;
+    top: 12px;
+}
+/* --------------------------搜索框样式----------------------------------  */
+.nav .nav_search {
+    float: right;
+    height: 38px;
+    width: 161px;
+    margin: 21px 17px 0 0;
+    line-height: 38px;
+    /* border: 1px solid #FEA030; */
+    position: relative;
+    
+}
+.nav .nav_search span {
+    display: inline-block;
+    border: 0;
+    /* width: 105px;
+    height: 37px; */
+    
+}
+.nav .nav_search span input {
+    border: 0;
+    width: 161px;
+    height: 38px;
+    box-sizing: border-box;
+    /* margin-left: 15px; */
+    padding-left: 15px;
+    font-size: 14px;
+    border: 1px solid #FEA030;
+    border-radius: 20px;
+    outline: 0;
+    
+    
+}
+.nav_s1 {
+    display: block;
+    /* background-color: red; */
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top:9px ;
+    right: 15px;
+    background-image: url(../images/62.png);
+    background-repeat: no-repeat;
+}
+a.nav_s1:hover{
+    background-position: -30px 0;
+}
+.search_custom {
+    display: none;
+    width: 178px;
+    height: 90px;
+    padding: 6px 0;
+    background: #fff;
+    border: 1px solid #ccc;
+    position: absolute;
+    z-index: 10000;
+    top: 43px;
+    left: -18px;
+}
+.search_custom li:hover{
+    background-color: #F9F9F9;
+}
+.search_custom a {
+    height: 30px;
+    display: block;
+    padding-left: 12px;
+    line-height: 30px;
+}
+.search_custom span{
+    font-size: 12px;
+}
+.search_custom .search-icon0 {
+    background-color: #fd5253;
+}
+.search_custom .search-icon1 {
+    background-color: #ff7B41;
+}
+.search_custom .search-icon2 {
+    background-color: #FFAD2B;
+}
+.search_custom .search-icon0, .search_custom .search-icon1, .search_custom .search-icon2 {
+    width: 18px;
+    height: 18px;
+    /* display: inline-block; */
+    float: left;
+    margin: 6px 10px 0 0;
+    line-height: 18px;
+    text-align: center;
+    color: #fff;
+    border-radius: 2px;
+}
+.search_custom .search-name {
+    display: inline-block;
+    width: 128px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+/* 游戏目录样式 */
+ .nav_menu {
+    float: right;
+    /* margin-right: 270px; */
+    width: 85px;
+    height: 90px;
+    background-color: #FF5C23;
+
+
+}
+
+.nav_menu>a>span {
+    display: block;
+    color: #fff;
+    font-size: 12px;
+    margin: 0 auto;
+    text-align: center;
+}
+.nav_menu .icon_list {
+    height: 30px;
+    width: 30px;
+    margin: 30px 0 0 29px;
+    /* background-color: #fff; */
+    background-image: url(../images/28.png);
+    background-repeat: no-repeat;
+    background-position: -90px ;
+    background-size: 170px;
+}
+/* 点击之后游戏目录样式变化 */
+.menu_active{
+    background-color: #29292A;
+}
+.menu_active>a>div.icon_list{
+    background-position: -22px ;
+}
+.menu_active>a>span{
+    color: transparent;
+}
+/* -------------点击游戏目录显示的样式manu-game------------- */
+.nav_menu .game-menu {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 80px;
+    background-color: #282a2c;
+    display: none;  
+}
+.action{
+    transform-origin:0 0;
+    animation:gary 0.5s linear;
+}
+.action1{  
+    transform-origin:0 0;
+    animation:gary1 0.5s linear;
+} 
+@keyframes gary{
+    0%{transform:scale(1,0);}
+    25%{transform:scale(1,0.25);}    
+    50%{transform:scale(1,0.5);}        
+    75%{transform:scale(1,0.75);}        
+    100%{transform:scale(1,1);}    
+}
+@keyframes gary1{       
+    0%{transform:scale(1,1);}
+    25%{transform:scale(1,0.75);} 
+    50%{transform:scale(1,0.5);} 
+    75%{transform:scale(1,0.25);} 
+    100%{transform:scale(1,0);
+    }  
+}
+
+.game-menu h2{
+    height: 45px;
+    padding: 0 30px;
+    background-color: #3d3f41;
+    color: #b8b8b8;
+    line-height: 45px;
+    font-size: 16px;
+}
+.game-menu h2 span{
+    float: left;
+}
+.game-menu h2>span::before {
+    display: inline-block;
+    content:"";
+    width: 4px;
+    height: 15px;
+    background-color: #FE8800;
+    margin-right: 8px;
+    vertical-align: middle;
+
+}
+.game-menu h2 span:first-child{
+    width: 700px;
+}
+.game-menu h2 span:nth-child(2){
+    width: 260px;
+}
+.game-menu h2 span:nth-child(3){
+    width: 140px;
+}
+.game-menu h2 span:nth-child(4){
+    width: 76px;
+}
+.game-menu h2 span:not(:first-child){
+    padding-left: 30px;
+}
+/* 游戏列表样式 */
+.list-game-menu ul {
+    float: left;
+    max-height: 417px;
+    padding: 20px 0px 20px 30px;
+    border-right: 1px solid #3e3e40;
+    overflow-y: auto;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.list-game-menu .content-web {
+    width: 700px;
+}
+.list-game-menu .content-h5 {
+    width: 266px;
+}
+.list-game-menu .content-client {
+    width: 140px;
+}
+.list-game-menu .content-mobile {
+    width: 140px;
+    border: 0;
+    margin-left: -5px;
+}
+.list-game-menu .content-h5 a {
+    width: 130px;
+}
+.list-game-menu .content-client {
+    width: 140px;
+}
+.list-game-menu  .content-mobile {
+    width: 140px;
+    margin-right: -5px;
+}
+.list-game-menu>ul>a {
+    display: inline-block;
+    width: 140px;
+    height: 32px;
+    /* float: left; */
+    font-size: 14px;
+    color: #ccc;
+}
+.list-game-menu a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+.list-game-menu .more-gamelist {
+    float: left;
+    font-size: 12px;
+    color: #999;
+}
+.list-game-menu ul li {
+    float: left;
+    max-width: 115px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.icon-gamelist {
+    display: inline-block;
+    background: url(../images/28.png) no-repeat;
+}
+.gamelist-hot,.gamelist-new {
+    width: 10px;
+    height: 11px;
+    position: relative;
+    left: 4px;
+    top: -2px;
+}
+.gamelist-hot{
+    background-position: -49px -5px;
+}
+.gamelist-new{
+    background-position: -105px -5px;
+}
+/* 热游新游图标注释 */
+.game-menu .item-menu {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    color: #999;
+    height: 45px;
+    line-height: 45px;
+    font-size: 12px;
+}
+.item-menu span.game-hot::before{
+    display: inline-block;
+    width: 10px;
+    height: 11px;
+    overflow: hidden;
+    content:"";
+    background: url(../images/28.png);
+    background-repeat: no-repeat;
+    background-position: -49px -5px;
+    vertical-align: middle;
+    margin-right: 4px;
+}
+.item-menu span.game-new::before{
+    display: inline-block;
+    width: 10px;
+    height: 11px;
+    overflow: hidden;
+    content:"";
+    background: url(../images/28.png);
+    background-repeat: no-repeat;
+    background-position: -105px -5px;
+    vertical-align: middle;
+    margin-right: 4px;
+    margin-left: 2px;
+}
+/* ---------------点击游戏目录下拉框---------- */
+
+/* -----------------------节点样式----------------------------------*/
+.sec .wrap {
+    height: 2900px;
+    z-index: 2;
+}
+
+/* -----------------轮播图---------------- */
+.banner {
+    position: relative;
+    height: 365px;
+    z-index:0;
+    padding-top: 15px;
+}
+.banner .slide,
+.b-focus-area,
+.b-focus-area>ul,
+.b-focus-area>ul li{
+    height: 550px;
+    min-width: 1140px;
+}
+.banner .slide {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    /* z-index: -1; */
+}
+.b-focus-area {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.b-focus-area>ul {
+    position: absolute;
+    width: 9515px;
+    left: 0px;
+    transition: all 0.5s;
+    
+}
+.b-focus-area>ul li {
+    float: left;
+    width: 20%;
+}
+.b-focus-area>ul li{
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.b-focus-area .slide-link {
+    display: block;
+    height: 365px;
+    width: 100%;
+    min-width: 1140px;
+}
+.slide .b-focus-num {
+    position: absolute;
+    top: 315px;
+    bottom: 5%;
+    height: 20px;
+    width: 90%;
+    padding: 0 5%;
+    text-align: center;
+    z-index: 10;
+}
+.slide .b-focus-num span {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin: 0 5px;
+    border-radius: 7px;
+    background-color: rgba(0, 0, 0, .4);
+}
+.slide .b-focus-num .cur {
+    width: 46px;
+    background-color: #ff5c23;
+    cursor: default;
+}
+/* -----------------精品推荐----------------------------- */
+.wrap {
+    position: relative;
+    /* z-index: 100; */
+}
+.wrap .recommend {
+    width: 1366px;
+    height: 382px;
+    margin: 0 auto;
+    background-color: rgba(255,255,255,.8);
+    margin-bottom: 45px;
+    z-index: 10;
+}
+.wrap .recommend .title {
+    width: 1364px;
+    height: 45px;
+    margin: 0px 0px 15px;
+    padding: 15px 0px 0px;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+.wrap .recommend .title h1 {
+    width: 130px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 20px;
+    padding: 0px 0px 0px 46px;
+    box-sizing: border-box;
+}
+.wrap .recommend .focus {
+    width: 1364px;
+    height: 320px;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    position: relative;
+}
+
+
+.focus .focus_area {
+    width: 1273px;
+    height: 320px;
+    margin: 0 auto;
+
+    /* position: relative; */
+    /* box-sizing: border-box; */
+    overflow: hidden;
+}
+
+.focus .focus_area ul {
+    /* box-sizing: border-box; */
+    list-style: none;
+    width: 2546px;
+    height: 100%;
+    transition: all 0.2s;
+    left: 0;
+}
+/* -----------------li标签样式--------------- */
+.focus .focus_area ul li {
+    height: 320px;
+    /* padding: -1px; */
+    border: 1px solid transparent;
+    float: left;
+    position: relative;
+    transition: all 0.2s;
+    
+
+}
+.focus .focus_area ul li+li{
+    margin-left: 22px;
+}
+.focus .focus_area ul li:nth-child(6) {
+    margin-left: 0;
+}
+
+
+.focus .focus_area ul li .recommend_title {
+    color: #333;
+    font-size: 14px;
+    text-align: center;
+    height: 38px;
+    line-height: 38px;
+    border: 1px solid #E0E0E0;
+    background-color: #F3F3F3;
+    box-sizing: border-box;
+    margin-top: -5px;
+    /* position: relative; */
+}
+.focus .focus_area ul li a {
+    display: inline-block;
+    width: 235px;
+    height: 280px;  
+    box-sizing: border-box;  
+}
+/* #imload1 {
+    margin-left: 5px;
+} */
+.focus .focus_area ul li .imgload {
+    width: 235px;
+    height: 280px;
+    
+}
+.focus .focus_area ul li .i_new {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    top: 0px;
+    left: 0px;
+    background-image: url(../images/81.png);
+    background-repeat: no-repeat;
+    background-position: 0px -200px;
+}
+.focus .focus_area .recommend-mask {
+    width: 237px;
+    height: 40px;
+    /* border: 1px solid #FF7025; */
+    /* border-top: 1px solid #E0E0E0; */
+    background-color: #fff;
+    position: absolute;
+    bottom:-39px;
+    box-sizing: border-box;
+    transition: all 0.2s;
+    border-bottom: 1px solid #FF7025;
+}
+.focus .focus_area .recommend-mask .recommend-btn {
+    width: 237px;
+    height: 39px;
+    margin: 0 auto;
+}
+/* -----------------------鼠标悬停时的变化------------------- */
+.focus .focus_area ul li:hover {
+    border: 1px solid #FF7025;
+    /* width: 235px; */
+    /* box-sizing: border-box; */
+}
+/* .focus .focus_area ul li:hover imgload{
+    width: 235px;
+    height: 280px;
+} */
+.focus .focus_area ul li:hover>div {
+    /* margin-top: -41px; */
+    height: 40px;
+    transform: translateY(-40px) ;
+}
+/* -----------------------鼠标悬停时的变化------------------- */
+.focus .focus_area .recommend-mask .recommend-btn a {
+    /* float: left; */
+    display: inline-block;
+    width: 40px;
+    height: 39px;
+    font-size: 14px;
+    margin-top: -20px;
+    line-height: 39px;
+    /* position: absolute;
+    top: 0; */
+}
+.recommend-mask .recommend-btn .recommend-btn-gw {
+    margin-left: 14px;
+    padding-right: 8px;
+    background-image: url(../gif/9.gif);
+    background-repeat: no-repeat;
+    background-position: 96% 50%;
+    /* border: 1px solid #5e5e5e; */
+    /* padding-left: 8px; */
+}
+.recommend-mask .recommend-btn .recommend-btn-lb {
+    /* margin-left: 14px; */
+    padding-right: 8px;
+    background-image: url(../gif/9.gif);
+    background-repeat: no-repeat;
+    background-position: 96% 50%;
+    /* border: 1px solid #5e5e5e; */
+    /* padding-left: 8px; */
+}
+.focus .focus_area .recommend-mask .recommend-btn .recommend-btn-in {
+    width: 88px;
+    background: #ff823c;
+    color: #fff;
+    margin-top: 0.2px;
+    text-align: center;
+}
+/* ------------------箭头图片跳转------------------ */
+.focus .focus_pre,.focus_next {
+    display: block;
+    width: 27px;
+    height: 124px;
+    background: #fff;
+    border: 1px solid #ccc;
+    position: absolute;
+    cursor: pointer;
+    background-image: url(../images/75.png);
+    background-repeat: no-repeat;
+    
+}
+.focus .focus_pre {
+    left: 0px;
+    top: 97px;
+    background-position: 5px -73px;
+}
+.focus .focus_pre:hover {
+    background-color: rgb(81,186,255);
+}
+.focus .focus_next {
+    right: 0px;
+    top:97px;
+    background-position: -126px -73px;
+}
+.focus .focus_next:hover {
+    background-color: rgb(81,186,255);
+}
+/* -------------------------游戏列表----------------------- */
+.wrap .hot {
+    width: 1366px;
+    height: 750px;
+    margin: 0 auto;
+    margin-bottom: 45px;
+    /* border: 1px solid black; */
+}
+/* -------------------------开服列表---------------------- */
+.wrap .hot .slide-server {
+    width: 318px;
+    height: 749px;
+    float: left;
+    /* border: 1px solid red; */
+}
+.wrap .hot .slide-server h1 {
+    height: 35px;
+    font-size: 20px;
+}
+.wrap .hot .slide-server .g-list {
+    width: 318px;
+    height: 714px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.hot .slide-server .g-list .tab {
+    width: 316px;
+    height: 46px;
+    margin-bottom: 10px;
+}
+.g-list .tab ul {
+    list-style: none;
+    box-sizing: border-box;
+}
+.g-list .tab ul li {
+    float: left;
+    width: 105px;
+    height: 47px;
+    line-height: 47px;
+    border-top: 1px solid transparent;
+    /* border-right: 1px solid ; */
+    background: url(../images/82.png) no-repeat;
+    /* background-position: 0 0; */
+    /* background-size: 50%; */
+    /* box-sizing: border-box; */
+    text-align: center;
+}
+.g-list .tab .clearfix .cur{
+    color: #333;
+    font-weight: 700;
+    border-top: 1px solid #ff5c23;
+}
+.g-list .tab .clearfix a:hover {
+    text-decoration: none;
+}
+.title a.serverA {
+    display: block;
+    width: 300px;
+    height: 90px;
+    margin: 0 auto;
+
+}
+.title .server img{
+    width: 300px;
+    height: 90px;
+
+}
+/* -------------------------开服列表----------------------- */
+/* ----------------------已开新服/新服预告------------- */
+.g-list .ul-list {
+    width: 316px;
+    height: 640px;
+    overflow: hidden;
+    
+}
+/* .g-list .ul-list li:hover {
+    background-color: rgb(255, 92, 35);
+} */
+.g-list .ul-list .list-rank {
+    /* width: 298px; */
+    height: 22px;
+    padding: 9px 15px;
+    padding-bottom: 4px;
+    /* 段落中文本不换行且文字超出边界使用省略号..... */
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: right;
+    overflow: hidden;
+
+    /* border: 1px solid blue; */
+    /* box-sizing: border-box; */
+}
+.list-rank a>span.list-data {
+    width: 50px;
+     
+}
+.ul-list .list-rank>a:hover{text-decoration: none;}
+.list-data,.list-time {
+    color: #999;  
+}
+.list-data,.list-time,.list-name {
+    float: left;
+    text-align: left;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    
+}
+.list-rank .list-time {
+    width: 48px;
+    
+}
+.list-rank .list-name {
+    max-width: 99px;
+    overflow: hidden;
+}
+.list-rank .micro-icon {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin: 4px 0px 0px 5px;
+    /* display: inline-block; */
+    background: url(../images/40.png) no-repeat;
+}
+.list-rank .list-server {
+    color: #ff5c23;
+    text-overflow: ellipsis;
+    /* white-space: nowrap; */
+    font-size: 12px;
+}
+/* ----------------------已开新服/新服预告------------- */
+
+/* ------------------------新游推荐---------------- */
+.g-list .newgame-list {
+    position: relative;
+    height: 630px;
+    overflow: hidden;
+}
+.g-list .newgame-list .c-focus {
+    position: relative;
+    height: 68px;
+    padding: 11px 82px 11px 127px;
+}
+
+.newgame-list .c-focus img{
+    position: absolute;
+    left: 19px;
+    top: 10px;
+    width: 95px;
+    height: 68px;
+}
+.newgame-list .btn-org {
+    display: inline-block;
+    position: absolute;
+    top: 34px;
+    right: 14px;
+    width: 68px;
+    height: 24px;
+    line-height: 24px;
+    background-color: #ff823c;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+}
+.newgame-list .btn-org:hover {
+    background-color: rgb(255, 92, 35);
+}
+.newgame-list h3 {
+    font-size: 16px;
+    line-height: 28px;
+}
+.newgame-list h3>a:hover {
+    text-decoration: underline;
+}
+.newgame-list p{
+    font-size: 12px;
+    line-height: 20px;
+    color: #ccc;
+}
+.ulist li:hover {
+    background-color: rgb(244, 244, 244);
+}
+/* ------------------------新游推荐---------------- */
+/* -----------------热门游戏----------------*/
+.main {
+    width: 1020px;
+    height: 750px;
+    float: right;
+    /* border: 1px solid black; */
+}
+.main .title {
+    position: relative;
+    width: 1020px;
+    height: 432px;
+    /* border: 1px solid rebeccapurple; */
+    margin-bottom: 15px;
+    text-align: right;
+    
+}
+.main .title-1 {
+    width: 100%;
+    height: 36px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #E7E7E7;
+}
+.main .title-1 h1 {
+    position: absolute;
+    width: 80px;
+    height: 35px;
+    top: 0;
+    left: 0;
+    color: #444;
+    font-size: 20px;
+    border-bottom: 1px solid #ff5c23;
+}
+.title-1 .title-more {
+    display: inline-block;
+    width: 75px;
+    height: 19px;
+    font-size: 14px;
+    color: #666;
+    box-sizing: border-box;
+    /* line-height: 30px; */
+}
+.title-1 .title-more span:first-child{
+    vertical-align: top;
+}
+
+.title a:hover {
+    text-decoration: underline;
+}
+.title-more .i-moretitle {
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    background: url(../images/81.png) no-repeat;
+    background-position: 0 -22px;
+    margin-left: 8px;
+}
+/* --------------热门游戏图片列表样式----------------- */
+ .title .hot-list {
+    box-sizing: border-box;
+    list-style: none;
+    width: 1039px;
+    height: 396px;
+    /* margin-top: 23px; */
+    /* margin-left: -2px; */
+    /* clear: both; */
+}  
+
+/* -----------------li标签样式--------------- */
+.title .hot-list li {
+    height: 282spx;
+    /* width: 244px; */
+    /* padding: -1px; */
+    border: 1px solid transparent;
+    float: left;
+    position: relative;
+    transition: all 0.2s;
+    margin: 0px 14px 15px 0px;
+    overflow: hidden;
+
+} 
+.title .hot-list li .hot_title {
+    color: #333;
+    font-size: 14px;
+    text-align: center;
+    height: 29px;
+    line-height: 29px;
+    border: 1px solid #E0E0E0;
+    background-color: #F3F3F3;
+    box-sizing: border-box;
+    margin-top: -4px;
+    /* position: relative; */
+}
+.main .title .hot-list li>a{
+    display: inline-block;
+    width: 242px;
+    height: 153px;  
+    box-sizing: border-box;  
+}
+/* #imload1 {
+    margin-left: 5px;
+} */
+.main .title .hot-list li .imgload1 {
+    width: 242px;
+    height: 153px;
+    
+}
+
+.main .title .hot-mask {
+    width: 242px;
+    height: 29px;
+    /* border: 1px solid #FF7025; */
+    /* border-top: 1px solid #E0E0E0; */
+    background-color: #fff;
+    position: absolute;
+    bottom:-29px;
+    box-sizing: border-box;
+    transition: all 0.2s;
+    border-bottom: 1px solid #FF7025;
+    /* display: none; */
+}
+.main .title .hot-mask .hot-btn {
+    width: 242px;
+    height: 29px;
+    margin: 0 auto;
+    text-align: left;
+    line-height: 29px;
+    border-right: 1px solid #FF7025;
+    box-sizing: border-box;
+    position: relative;
+   
+    /* box-sizing: border-box; */
+}
+/* -----------------------鼠标悬停时的变化------------------- */
+.hot-list li:hover {
+    border: 1px solid #FF7025;
+    /* width: 235px; */
+    /* box-sizing: border-box; */
+}
+/* .focus .focus_area ul li:hover imgload{
+    width: 235px;
+    height: 280px;
+} */
+.hot-list li:hover>div {
+    /* margin-top: -41px; */
+    /* display: block; */
+    height: 29px;
+    transform: translateY(-29px) ;
+}
+
+/* -----------------------鼠标悬停时的变化------------------- */
+.hot-mask .hot-btn a {
+    /* float: left; */
+    display: inline-block;
+    width: 40px;
+    height: 29px;
+    font-size: 12px;
+    margin-top: -20px;
+    line-height: 29px;
+    /* position: absolute;
+    top: 0; */
+}
+.hot-mask .hot-btn .hot-btn-gw {
+    margin-left: 16px;
+    padding-right: 8px;
+    background-image: url(../gif/9.gif);
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+    /* border: 1px solid #5e5e5e; */
+    /* padding-left: 8px; */
+}
+.hot-mask .hot-btn .hot-btn-lb {
+    /* margin-left: 14px; */
+    padding-right:0 6px;
+    background-image: url(../gif/9.gif);
+    background-repeat: no-repeat;
+    background-position: 96% 50%;
+    /* border: 1px solid #5e5e5e; */
+    /* padding-left: 8px; */
+}
+.hot-mask .hot-btn a.hot-btn-in {
+    position: absolute;
+    width: 80px;
+    height: 29px;
+    background: #ff823c;
+    color: #fff;
+    margin-left: 14px;
+    top: 20px;
+    right: 0;
+    text-align: center;
+    border-top: 1px solid #E0E0E0;
+}
+/* ------------------鼠标移入显示二维码------------------ */
+.hot-mask .feature-pop {
+    position: absolute;
+    left: 0;
+    top:-153px;
+    height: 153px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0,0,0,.7);
+    transition: all 0.2s;
+    display: none;
+}
+.hot-list li:hover .feature-pop {
+    display: block;
+}
+.hot-mask .feature-pop .code-box {
+    width: 110px;
+    height: 110px;
+    margin: 10px auto;
+    position: relative;
+    background: #d4d4d4;
+    border-radius: 5px;
+}
+.hot-mask .feature-pop .code-box .code-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -50px 0px 0px -50px;
+    width: 100px;
+    height: 100px;
+}
+.feature-pop .code-box .code-img img{
+    width: 100px;
+    height: 100px;
+}
+.feature-pop p{
+    color: #fff;
+    font-size: 12px;
+}
+/* ---------------手机页游 ----------------*/
+.main .title1 {
+    position: relative;
+    width: 1020px;
+    height: 302px;
+    /* border: 1px solid rebeccapurple; */
+    margin-bottom: 15px;
+    text-align: right;
+}
+.title1 .classic-list {
+    /* height: 266px; */
+    width: 1020px;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.classic-list li {
+    position: relative;
+    /* float: left; */
+    margin: -2px 1px 15px 0px;
+}
+.classic-list li {
+    width: 244px;
+    height: 118px;
+}
+/* --------------显示图片 ---------------*/
+.classic-list .feature-pop {
+    position: absolute;
+    left: 0;
+    bottom: -118px;
+    height: 118px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0,0,0,.7);
+    transition: all 0.2s;
+    display: none;
+}
+.classic-list li:hover .feature-pop {
+    bottom: 0px;
+    display: block;
+}
+.classic-list .feature-pop .code-box {
+    width: 80px;
+    height: 80px;
+    /* margin: 10px auto; */
+    position: relative;
+    background: #d4d4d4;
+    left: 18px;
+    top: 18px;
+    border-radius: 5px;
+}
+.classic-list .feature-pop .code-box .code-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -35px 0px 0px -35px;
+    width: 70px;
+    height: 70px;
+}
+.classic-list .feature-pop .code-box .code-img img{
+    width: 70px;
+    height: 70px;
+}
+.classic-list .feature-pop>p{
+    position: absolute;
+    top: 30px;
+    left: 120px;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+}
+.classic-list .code-click {
+    position: absolute;
+    top: 60px;
+    left: 130px;
+    width: 78px;
+    height: 26px;
+    background: url(../images/46.png);
+}
+/* ------------------推荐新游----------------------- */
+.focus .focus_area ul li .i_hot {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    top: 0px;
+    left: 0px;
+    background-image: url(../images/81.png);
+    background-repeat: no-repeat;
+    background-position: 0px -303px;
+}
+.wrap .recommend .t1>h1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 36px;
+    width: 80px;
+    padding: 0;
+    padding-bottom: 43px;
+    border-bottom: 1px solid #FF7025;
+}
+.wrap .recommend .t1 {
+    position: relative;
+    border-bottom: 1px solid #E7E7E7;
+}
+.recommend>.t1 .title-more {
+    position: absolute;
+    right: 0;
+    top: 14px;
+    font-size: 14px;
+}
+.title-more span:first-child{
+    vertical-align: top;
+}
+.recommend>.t1 .title-more .i-moretitle {
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    background: url(../images/81.png) no-repeat;
+    background-position: 0 -22px;
+    margin-left: 8px;
+}
+.rec-newgame {
+ margin-bottom: 45px;
+}
+
+
+/* ------------------------活动专区---------------------- */
+.event {
+    width: 1366px;
+    height: 231px;
+    margin: 0 auto;
+    margin-bottom: 45px;
+}
+.event>.title {
+    position: relative;
+    width: 1366px;
+    height: 36px;
+    border-bottom: 1px solid #E7E7E7;
+    margin-bottom: 15px;
+}
+.event .t2>h1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 36px;
+    width: 80px;
+    padding: 0;
+    font-size: 20px;
+    /* padding-bottom: 43px; */
+    border-bottom: 1px solid #FF7025;
+}
+.event .t2 .title-more {
+    position: absolute;
+    right: 0;
+    top: 7px;
+    font-size: 14px;
+}
+.event .event-slider {
+    position: relative;
+    width: 1366px;
+    height: 180px;
+    margin-bottom: 45px;
+    /* border: 1px solid red; */
+}
+.c-focus-area {
+    width: 1271px;
+    height: 180px;
+    margin-left: 46px;
+    overflow: hidden;
+    position: relative;
+}
+.c-focus-area>ul {
+    position: absolute;
+    left: 0;
+    width: 2560px;
+}
+.c-focus-area .c-focus-cell {
+    height: 180px;
+    width: 235px;
+    /* margin-right: 24px; */
+    float: left;
+    transition: all 0.2s;
+}
+.c-focus-area ul>li+li{
+    margin-left: 24px;
+}
+.c-focus-area ul>li:nth-child(6) {
+    margin-left: 0;
+}
+.c-focus-area .c-focus-cell img{
+    width: 100%;
+    height: 180px;
+}
+.event>.event-slider .focus_pre,.event-slider .focus_next {
+    display: block;
+    width: 29px;
+    height: 96px;
+    background: #fff;
+    border: 1px solid #ccc;
+    position: absolute;
+    cursor: pointer;
+    background-image: url(../images/75.png);
+    background-repeat: no-repeat;
+    
+}
+.event>.event-slider .focus_pre {
+    left: 0px;
+    top: 42px;
+    background-position: 5px -88px;
+}
+.event>.event-slider .focus_pre:hover {
+    background-color: rgb(81,186,255);
+}
+.event>.event-slider .focus_next {
+    right: 0px;
+    top:42px;
+    background-position: -126px -88px;
+}
+.event>.event-slider .focus_next:hover {
+    background-color: rgb(81,186,255);
+}
+
+/* -----------------全部游戏------------------ */
+.all {
+    height: 908px;
+    width: 1366px;
+    margin: 0 auto;
+    margin-bottom: 45px;
+    /* border: 1px solid black; */
+}
+.all .side {
+    width: 318px;
+    height: 897px;
+    float: left;
+}
+.side>.title {
+    width: 318px;
+    height: 35px;
+    position: relative;
+}
+.side>.title>h1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 20px;
+    color: #444;
+}
+/* ------------------热游排行--------------------------- */
+.side .hotrank {
+    border: 1px solid #CCCCCC;
+}
+.hotrank>.list{
+    height: 860px;
+}
+.hotrank>.list li{
+    height:auto;
+}
+.list .list-rank{
+    position: relative;
+    height: 22px;
+    width: 286px;
+    /* box-sizing: border-box; */
+    display: block;
+    padding: 9px 15px;
+    overflow: hidden;
+    line-height: 22px;
+    text-align: right;
+}
+.list-rank .list-num,.list-img,.list-name,.list-type{
+    vertical-align: middle;
+    float: left;
+}
+.list-rank>.list-num {
+    width: 22px;
+    height: 22px;
+    margin-right: 18px;
+    text-align: center;
+    background-color: #EDEDED;
+}
+.list-rank-1>.list-num,.list-rank-2>.list-num,.list-rank-3>.list-num {
+    color: #fff;
+    width: 22px;
+    height: 22px;
+    margin-right: 18px;
+    text-align: center;
+}
+.list-rank-1 .list-num {
+    background-color: #fd5253;
+}
+.list-rank-2 .list-num {
+    background-color: #ff7b41;
+}
+.list-rank-3 .list-num {
+    background-color: #ffAD2B;
+}
+.list-rank .list-img{
+    display: none;
+    width: 85px;
+    height: 60px;
+}
+.hotrank .list-name{
+    width: 90px;
+    height: 21px;
+}
+.list-type {
+    font-size: 13px;
+    color: #999;
+}
+.list-rank .btn-org {
+    color: #FF630E;
+    font-size: 13px;
+    line-height: 21px;
+}
+/* -----鼠标悬浮时状态改变------- */
+.hotrank>.list>li:hover {
+    height: 90px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+.hotrank>.list>li:hover a{
+    background-color: #f4f4f4;
+    height: 70px;
+}
+.hotrank>.list>li:hover img{
+    display: inline-block;
+}
+.hotrank>.list>li:hover span{
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+}
+.hotrank>.list>li:hover .list-name{
+    position: absolute;
+    left: 150px;
+    top: 0px;
+    font-weight: 700;
+    font-size: 16px;
+}
+.hotrank>.list>li:hover .list-type{
+    position: absolute;
+    left: 150px;
+    top: 20px;
+}
+.hotrank>.list>li:hover .btn-org{
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    display:block;
+    width: 68px;
+    height: 23px;
+    background-color: #ff823c;
+    color: #fff;
+    line-height: 23px;
+    text-align: center;
+    /* color: #fff; */
+}
+.hotrank>.list>li>a>.btn-org:hover{
+    background-color: #FF5C23;
+} 
+/* -----------------全部游戏------------------ */
+.all .all-main {
+    width: 1020px;
+    float: right;
+}
+.all-main .all-title {
+    position: relative;
+    width: 1020px;
+    height: 36px;
+    margin-bottom: 15px;
+    text-align: right;
+    border-bottom: 1px solid #E7E7E7;  
+}
+.all-title h1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 36px;
+    width: 80px;
+    padding: 0;
+    font-size: 20px;
+    border-bottom: 1px solid #FF7025;
+}
+.all-title .title-more {
+    position: absolute;
+    right: 0;
+    top: 7px;
+    font-size: 14px;
+}
+.all-main>.all-list {
+    width: 1020px;
+    height: 237px;
+    border-bottom: 1px dashed rgb(160, 146, 146);
+    margin-bottom: 22px;
+}
+.all-list>div {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom: 15px;
+    
+}
+.all-list>div>ul{
+    width: 908px;
+    display: flex;  
+    flex-flow: row nowrap; 
+    
+}
+.all-list>div>ul li{
+    width: 118px;
+    height: 88px;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    margin-right: 12px;
+   
+}
+.all-list>div>ul li:hover {
+    border: 1px solid #51BAFF;
+}
+.all-list>div>ul>li>a{
+    display: block;
+    width: 117px;
+    height: 87px;
+}
+.all-list>div>ul>li>a>img{
+    display: block;
+    width: 117px;
+    height: 87px;
+}
+.all-list>div>a{
+    display: block;
+    width: 118px;
+    height: 85px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    background: url(../images/42.png) 100% 0 no-repeat;
+    font-size: 14px;
+}
+.all-list>div>a:hover {
+    background: url(../images/42.png) 0 100% no-repeat;
+}
+/* -------------------all-list-01------------ */
+.all-list-01 {
+    height: 96px;
+    display: flex;
+    flex-flow: row wrap;
+}
+.all-list-01>li {
+    width: 117px;
+    height: 20px;
+    margin-right: 10px;
+    margin-bottom: 4px;
+    color: #666;
+    font-size: 14px;
+}
+.all-list-011 {
+    height: 49px;
+}
+.all-main>div:nth-child(3){
+    height: 185px;
+}
+.all-main>div:nth-child(4){
+    height: 185px;
+}
+.all-main>div:nth-child(5){
+    height: 185px;
+    /* border-bottom: 0; */
+}
+/* -----------------全部游戏文字图标----------- */
+.all-list .hot-text {
+    color: #FF5C23;
+}
+.all-list .new-text {
+    color: #8CCE21;
+}
+.all-list>ul>li{
+    position: relative;
+}
+.all-list>ul>li:hover {
+    color: #FF5C23;
+    text-decoration: underline;
+}
+.all-list>ul>li.new-text:hover{
+    color: #8CCE21;
+}
+.all-list>ul>li>i{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 0px;
+    /* right: 3px; */
+} 
+.all-list>ul>li>.list-hot{ 
+    background: url(../images/55.png) no-repeat;
+}
+.all-list>ul>li>.new {
+    background: url(../images/66.png) no-repeat;
+}
+/* --------------------固定栏----------------- */
+.fix-tools {
+    position: fixed;
+    z-index: 9999;
+    right: 0;
+    bottom: 275px;
+    width: 64px;
+    height: 192px;
+    display: none;
+    /* background-color: aqua; */
+}
+.fix-tools .item {
+    width: 60px;
+    height: 60px;
+    margin: 4px 0 0 4px;
+    cursor: pointer;
+}
+/* .gameAd {
+    position: relative;
+} */
+.gameAd .item {
+    background-color: #ff823c;
+    color: #fff;
+}
+.gameAd .item span{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 15px;
+    /* box-sizing: border-box; */
+    font-size: 14px;
+    margin: 15px;
+    white-space: wrap;
+}
+.gameAd:hover .gameAdimg{
+    display: inline-block;
+}
+.gameAdimg {
+    position: absolute;
+    right: 70px;
+    top: 0px;
+    width: 220px;
+    height: 280px;
+    z-index: 1011;
+    display: none;
+}
+.info {
+    position: absolute;
+    right: 70px;
+    top: 0px;
+    padding: 12px;
+    background-color: #fff;
+    border: 1px solid #e7e7e7;
+    text-align: center;
+    display: none;
+}
+.code:hover .info{
+    display: block;
+}
+.code>.item{
+    background: url(../images/78.png) 50% 50% no-repeat #f4f4f4;
+}
+.code>.item:hover{
+    background: url(../images/13.png) 50% 50% no-repeat #f4f4f4;
+}
+.code>.info img{
+    width: 142px;
+    height: 142px;
+}
+.code>.info span{
+    width: 142px;
+    margin-top: 12px;
+    font-size: 14px;
+    color: #ff5c23;
+   
+}
+.to-top {
+    background: url(../images/17.png) 50% 50% no-repeat #f4f4f4;
+    display: block;
+}
+.to-top:hover {
+    background: url(../images/52.png) 50% 50% no-repeat #f4f4f4;
+}
+/* ------------------小广告------------------ */
+.little-title {
+    position: fixed;
+    z-index:1000;
+    bottom: 0px;
+    right: 0px;
+}
+.little-title>a>img{
+    vertical-align:bottom;
+    width: 260px;
+    height: 194px;
+}
+.little-title>.title-delete {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: block;
+    width: 21px;
+    height: 21px;
+    background: url(../gif/10.gif) no-repeat;
+    background-size: 21px;
+    cursor: pointer;
+}
+/* -------------------------对联图片------------------ */
+.l-couple {
+    position: absolute;
+    display: block;
+    left: 0px;
+    top: 940px;
+    width: 269px;
+    height: 370px;
+    background: url(../picture/103.jpg) right 0px no-repeat;
+    z-index: 10;
+}
+.r-couple {
+    position: absolute;
+    display: block;
+    right: 0px;
+    top: 940px;
+    width: 269px;
+    height: 370px;
+    background: url(../picture/104.jpg) left 0px no-repeat;
+    z-index: 10;
+}
+/* ----------------------------底部样式------------------- */
+.foot {
+    width: 100%;
+    height: 125px;
+    background-color: #F2F2F2;
+}
+.foot .wrap_foot {
+    width: 1366px;
+    height: 101px;
+    margin: 0 auto;
+}
+.foot .wrap_foot .foot_logo1 {
+    float: left;
+    width: 194px;
+    height: 52px;
+    margin-top: 33px;
+    background: url('../images/48.png') no-repeat;
+
+}
+.foot .wrap_foot .foot_logo2 {
+    float: left;
+    width: 36px;
+    height: 36px;
+    margin: 42px 0 0 26px;
+    background: url('../images/79.png') no-repeat;
+}
+.foot .wrap_foot .foot_text {
+    float: right;
+    height: 69px;
+    font-size: 12px;
+    text-align: right;
+    margin: 32px 0 0 ;
+}
+.foot .wrap_foot .foot_text a {
+    margin: 0 0 0 35px;
+}
+.foot .wrap_foot .foot_text a:hover {
+    text-decoration: underline;
+}
+.foot .wrap_foot .foot_text p {
+    margin: 0 0 10px;
+}
+

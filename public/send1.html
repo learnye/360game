@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function insert(){
+            for(i=1;i<=12;i++){
+            var img='./banner/'+i+'.gif';
+            var xhr=new XMLHttpRequest();
+            xhr.onreadystatechange=function(){
+                if(xhr.readyState==4 && xhr.status==200){
+                var r=xhr.responseText;
+                // console.log(r);
+            }
+                
+            }
+            xhr.open('put','/pro/sendimg1',true);
+            var formdata=`icon=${img}`;
+        xhr.setRequestHeader('content-type','application/x-www-form-urlencoded');
+        xhr.send(formdata);
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="insert()">插入</button>
+</body>
+</html>
